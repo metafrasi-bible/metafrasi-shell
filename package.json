@@ -2,10 +2,13 @@
 	"name": "metafrasi-shell",
 	"version": "0.0.1",
 	"private": true,
+	"engines": {
+		"node": ">=16.14"
+	},
 	"scripts": {
-		"dev": "npx vite dev",
-		"build": "npx vite build",
-		"preview": "npx vite preview",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -28,7 +31,7 @@
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
-		"vite": "^3.0.0"
+		"vite": "^3.1.0"
 	},
 	"type": "module"
 }
